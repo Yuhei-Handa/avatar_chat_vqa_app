@@ -27,6 +27,12 @@ run.exe --use_gpu
 streamlit run app.py
 ```
 
+使用モデル：
+"koheiduck/bert-japanese-finetuned-sentiment"　
+https://huggingface.co/koheiduck/bert-japanese-finetuned-sentiment
+"cl-tohoku/bert-base-japanese-whole-word-masking"　
+https://huggingface.co/cl-tohoku/bert-base-japanese-whole-word-masking
+
 音声："VOICEVOX:ナースロボ＿タイプＴ"
 
 立ち絵:【MYCOEIROINK】ナースロボ_タイプT + 立ち絵PSD
