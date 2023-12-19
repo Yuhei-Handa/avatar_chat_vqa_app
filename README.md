@@ -10,6 +10,7 @@
 1. クローン後、以下のリンクからVOICEBOXをダウンロード、もしくは自身の環境に対応したパッケージを同じディレクトリにダウンロードし、起動することでローカル上にサーバーが立ち上げます。
 
 https://voicevox.hiroshiba.jp/
+
 https://github.com/VOICEVOX/voicevox_engine/releases/tag/0.14.2
 
 例：
