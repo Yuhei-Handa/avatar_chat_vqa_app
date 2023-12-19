@@ -65,14 +65,13 @@ def synthesis(speaker, query_data, max_retry):
         raise ConnectionError("音声エラー：リトライ回数が上限に到達しました。 synthesis : ", r)
 
 # テキストを音声に変換する関数
-def text_to_speech(texts, speaker, max_retry=20):
+def text_to_speech(texts, speaker, output_file, max_retry=20):
     if not texts:
         texts = "ちょっと、通信状態悪いかも？"
     
     query_data = audio_query(texts, speaker, max_retry)
     voice_data = synthesis(speaker, query_data, max_retry)
-
-    output_file = "output.wav"
+    
     with wave.open(output_file, 'wb') as wf:
         wf.setnchannels(1)
         wf.setsampwidth(2)
@@ -259,7 +258,7 @@ def app():
                     st.write(">" + user_text)
                 emotion = output_emotion(output_texts, emotional_model, emotional_tokenizer)
                 speaker = output_speaker(emotion)
-                text_to_speech(output_texts, speaker)
+                text_to_speech(output_texts, speaker, audio_path)
                 face_path = output_face_path(emotion)
                 is_talk = True
 
