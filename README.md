@@ -28,8 +28,10 @@ streamlit run app.py
 ```
 
 使用モデル：
+
 "koheiduck/bert-japanese-finetuned-sentiment"　
 https://huggingface.co/koheiduck/bert-japanese-finetuned-sentiment
+
 "cl-tohoku/bert-base-japanese-whole-word-masking"　
 https://huggingface.co/cl-tohoku/bert-base-japanese-whole-word-masking
 
