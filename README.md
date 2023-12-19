@@ -26,6 +26,7 @@ run.exe --use_gpu
 ```python:python
 streamlit run app.py
 ```
+
 音声："VOICEVOX:ナースロボ＿タイプＴ"
 
 立ち絵:【MYCOEIROINK】ナースロボ_タイプT + 立ち絵PSD
